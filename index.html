@@ -40,42 +40,42 @@
     />
   </head>
   <body class="font-sora">
-    <header></header>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="bg-[#FFF9F4] border-b border-black lg:border-none flex justify-between items-center lg:justify-center px-4 py-2 lg:px-36 lg:py-6"
+      >
+        <!-- Logo -->
+        <div class="flex items-center pr-80 gap-2">
+          <img src="./c1-assets/logo-header.png" alt="" />
+          <h1 class="hidden text-2xl pt-4 lg:block">
+            Browse<span class="text-yellow-500">4</span>Pets
+          </h1>
+        </div>
 
-    <!-- Navbar -->
-    <nav
-      class="bg-[#FFF9F4] border-b border-black lg:border-none flex justify-between items-center lg:justify-center px-4 py-2 lg:px-36 lg:py-6"
-    >
-      <!-- Logo -->
-      <div class="flex items-center pr-80 gap-2">
-        <img src="./c1-assets/logo-header.png" alt="" />
-        <h1 class="hidden text-2xl pt-4 lg:block">
-          Browse<span class="text-yellow-500">4</span>Pets
-        </h1>
-      </div>
+        <!-- Nav-Items -->
+        <div class="hidden lg:block px-40">
+          <ul class="flex gap-5">
+            <li>Find a pet</li>
+            <li>Breeds</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
 
-      <!-- Nav-Items -->
-      <div class="hidden lg:block px-40">
-        <ul class="flex gap-5">
-          <li>Find a pet</li>
-          <li>Breeds</li>
-          <li>Contact Us</li>
-        </ul>
-      </div>
+        <!-- Button and bell-->
+        <div class="hidden lg:block space-x-3 px-20">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button class="btn text-black btn-outline btn-warning">Login</button>
+          <button class="btn btn-warning">Register</button>
+        </div>
 
-      <!-- Button and bell-->
-      <div class="hidden lg:block space-x-3 px-20">
-        <i class="fa-regular fa-bell"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <button class="btn text-black btn-outline btn-warning">Login</button>
-        <button class="btn btn-warning">Register</button>
-      </div>
-
-      <!-- Hamburger -->
-      <div class="text-4xl lg:hidden">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </nav>
+        <!-- Hamburger -->
+        <div class="text-4xl lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <!-- Banner Part -->
@@ -127,9 +127,9 @@
         >
           <!-- image -->
           <div class="w-27 h-27 bg-white rounded-full last:py-5">
-            <img src="./c1-assets/dog-cartoon.png" alt="" />
+            <img src="./c1-assets/fish-cartoon.png" alt="" />
           </div>
-          <h1>Dog</h1>
+          <h1>Fish</h1>
           <p>3 items</p>
         </div>
         <!-- card-3 -->
@@ -138,9 +138,9 @@
         >
           <!-- image -->
           <div class="w-27 h-27 bg-white rounded-full last:py-5">
-            <img src="./c1-assets/dog-cartoon.png" alt="" />
+            <img src="./c1-assets/cat-cartoon.png" alt="" />
           </div>
-          <h1>Dog</h1>
+          <h1>Cat</h1>
           <p>3 items</p>
         </div>
         <!-- card-4 -->
@@ -149,9 +149,9 @@
         >
           <!-- image -->
           <div class="w-27 h-27 bg-white rounded-full last:py-5">
-            <img src="./c1-assets/dog-cartoon.png" alt="" />
+            <img src="./c1-assets/bird-cartoon.png" alt="" />
           </div>
-          <h1>Dog</h1>
+          <h1>Birds</h1>
           <p>3 items</p>
         </div>
         <!-- card-5 -->
@@ -160,9 +160,9 @@
         >
           <!-- image -->
           <div class="w-27 h-27 bg-white rounded-full last:py-5">
-            <img src="./c1-assets/dog-cartoon.png" alt="" />
+            <img src="./c1-assets/mouse-cartoon.png" alt="" />
           </div>
-          <h1>Dog</h1>
+          <h1>Small pet</h1>
           <p>3 items</p>
         </div>
         <!-- card-6 -->
@@ -171,10 +171,50 @@
         >
           <!-- image -->
           <div class="w-27 h-27 bg-white rounded-full last:py-5">
-            <img src="./c1-assets/dog-cartoon.png" alt="" />
+            <img src="./c1-assets/rabbit-cartoon.png" alt="" />
           </div>
-          <h1>Dog</h1>
-          <p>3 items</p>
+          <h1>Rabbit</h1>
+          <p>2 items</p>
+        </div>
+      </section>
+
+      <!-- Trending Pet Products -->
+
+      <section class="bg-[#FFF9F4] mb-32">
+        <h1
+          class="text-2xl font-bold lg:text-4xl mt-20 mb-4 lg:mb-20 mx-4 my-2 lg:mx-44"
+        >
+          Trending Pet Products
+        </h1>
+
+        <!-- cards -->
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 gap-4 mx-4 pb-20 lg:mx-44 mb-20"
+        >
+          <!-- First card -->
+          <div
+            class="bg-[#F9DF8A] rounded-xl relative col-span-2 lg:col-span-1 lg:row-span-3 flex flex-col px-6 lg:px-12 py-28"
+          >
+            <!-- Text -->
+            <div class="absolute left-10 lg:topp-28">
+              <h1 class="font-bold text-2xl lg:text-3xl mb-6">
+                T-Shirt For Dogs
+              </h1>
+
+              <p class="mb-6">
+                Discover a world of treats,toys, and <br />
+                essentials handpicked for your pet.
+              </p>
+              <button class="bg-white font-bold px-4 py-2 rounded-xl">
+                Shop Now
+              </button>
+            </div>
+
+            <!-- photo -->
+            <div class="relative top-24 left-52 lg:top-28 lg:left-36">
+              <img src="./c1-assets/cute-pet-mid.png" alt="" class="w-40" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
